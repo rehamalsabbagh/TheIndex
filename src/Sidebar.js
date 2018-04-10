@@ -6,7 +6,7 @@ function Sidebar(props) {
       <img src="theindex.svg" className="logo" />
       <section>
         <h4 className="menu-item active">
-          <a href="#">AUTHORS</a>
+          <a href="" onClick={()=>props.goBack()} >AUTHORS</a>
         </h4>
       </section>
     </sidebar>

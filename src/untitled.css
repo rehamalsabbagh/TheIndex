@@ -1,0 +1,269 @@
+.zero-margin{margin-bottom:0px !important;}
+.homebg {background-size: auto 100% !important;    background-position: 70% 0 !important;}
+
+.change-colors{
+    background-image:url(/wp-content/uploads/sites/10/2018/02/mob-green.png);
+}
+
+.second-news-row{margin-top:-30px;}
+
+.videobackground{width:100%; height:auto;}
+
+@media screen and (max-width: 1199px){
+.small-main{width:600px !important; height:auto !important;}
+}
+
+@media screen and (max-width: 1199px){
+.strip-outer-margins{margin-top:-18px !important; margin-bottom:38px !important;}
+.strip-inner-margin{margin-bottom:30px !important;}
+
+/*
+#goCollect-block:hover{background-image: url(/wp-content/uploads/sites/10/2016/11/Arabic-Desktop-gocollect-c.png);}
+#goSell-block:hover{background-image: url(/wp-content/uploads/sites/10/2016/11/Arabic-Desktop-gosell-c.png);}
+#goTap-block:hover{background-image: url(/wp-content/uploads/sites/10/2016/11/Arabic-Desktop-gotap-c.png);}
+#api-block:hover{background-image: url(/wp-content/uploads/sites/10/2016/11/Arabic-Desktop-api-c.png);}
+*/
+
+       .uranus{
+    opacity: 0.4 !important;}
+   .uranus:hover{
+    opacity: 1 !important;}
+
+    
+}
+
+@media screen and (max-width: 992px){
+.main-block-link{
+     width:50% !important;
+    background-size: 640px 200px !important;
+    }
+    
+#goCollect-block{background-image: url(../wp-content/uploads/sites/10/2016/11/tablet-W-gocollect.png)!important;}
+#goSell-block{background-image: url(../wp-content/uploads/sites/10/2016/11/tablet-W-gosell.png)!important;}
+#goTap-block{background-image: url(../wp-content/uploads/sites/10/2016/11/tablet-W-api.png)!important;}
+#api-block{background-image: url(../wp-content/uploads/sites/10/2017/02/tablet-english-testimonials-white.png)!important;}
+
+#goCollect-block:hover{background-image: url(../wp-content/uploads/sites/10/2017/01/Tablet-gocollect-coloured-e.png)!important;}
+#goSell-block:hover{background-image: url(../wp-content/uploads/sites/10/2017/01/Tablet-gosell-coloured-e.png)!important;}
+#goTap-block:hover{background-image: url(../wp-content/uploads/sites/10/2016/11/tablet-api.png)!important;}
+#api-block:hover{background-image: url(../wp-content/uploads/sites/10/2017/02/tablet-english-testimonials-color.png)!important;}
+
+}
+
+@media screen and (max-width: 767px){
+    .second-news-row-1{margin-top:0 !important;}
+    #clients-carousel .item ul li {margin-top:10px;}
+    .opacity-on-hover{margin-bottom:-70px !important;}
+.control-top-margin{margin-top:-50px !important;}
+.strip-outer-margins{margin-top:0px !important;padding-top:0px !important;border-top:0px !important; margin-bottom:30px !important;}
+.strip-inner-margin{margin-bottom:10px !important;}
+.fix-space-xs{margin-bottom:17px;}
+.main-block-link{
+     width:100% !important;
+     background-size: 736px 200px !important;}
+     
+#goCollect-block{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-gocollect.png) !important;}
+#goSell-block{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-gosell.png) !important;}
+#goTap-block{background-image: url(../wp-content/uploads/sites/10/2016/11/tablet-W-api.png) !important; border-top: none !important;}
+#api-block{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-api.png) !important;}
+
+#goCollect-block:hover{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-gocollect.png) !important;}
+#goSell-block:hover{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-gosell.png) !important;}
+#goTap-block:hover{background-image: url(../wp-content/uploads/sites/10/2016/11/Phone-api-final.png) !important; }
+#api-block:hover{background-image: url(../wp-content/uploads/sites/10/2016/11/phone-block-api.png) !important;}
+
+.main-block-link{
+     height: 170px !important;
+	 border-right: none !important;
+	 border-left: none !important;
+}
+
+#clients-carousel .item ul li {
+    width: 47% !important;
+}
+    
+}
+
+.strip-outer-margins{margin-top:30px; margin-bottom:20px;}
+.strip-inner-margin{margin-bottom:30px;}
+
+html {
+    margin-top: 0px !important;
+}
+
+#wpadminbar {display:none;}
+
+.player {
+    background: transparent !important;
+}
+
+.video-wrapper {
+    background: transparent !important;
+}
+
+#player {
+    background-color: transparent !important;
+}
+
+.no-padding > .vc_column-inner{
+    padding-left:0px !important; padding-right:0px !important;}
+    
+.iti-flag{
+    box-shadow:none !important;
+    background-color:transparent !important;
+    background-position:0 0 !important;
+    height:20px !important;
+    background-size:20px 20px !important;
+}
+
+.iti-flag.kw{
+    background-image: url("https://www.gotapnow.com/web/countryflag/Kuwait.png") !important;
+}
+
+.opacity-on-hover:hover{
+    opacity:0.6;
+}
+
+#slider-arrow-left{
+    float: left;
+    pointer-events: none;
+    margin-left:20px;
+}
+
+#slider-arrow-right{
+    float: right;
+    pointer-events: none;
+    margin-right:20px;
+}
+
+.flex-control-nav {
+    position: absolute;
+    z-index: 3;
+    line-height: 11px;
+}
+
+@media screen and (max-height: 768px) {
+     .flex-control-nav {bottom: 100px !important;}
+}
+
+@media screen and (max-height: 800px) {
+     .flex-control-nav {bottom: 15px;}
+}
+
+.flex-next {
+    background: url(/wp-content/uploads/sites/10/2016/10/arrow-right-stroke-03.svg) no-repeat 0 0 !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin-top:-40px !important;
+    margin-right:20px !important;
+}
+
+.flex-prev{
+    background: url(/wp-content/uploads/sites/10/2016/10/arrow-left-stroke-03.svg) no-repeat 0 0 !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin-top:-40px !important;
+    margin-left:20px !important;
+}
+
+
+.flex-control-paging > li > a {
+    background: rgba(255,255,255,0.3) ;
+}
+
+.flex-active{
+    background: rgba(255,255,255,0.6) !important;
+}
+
+
+@media screen and (max-width: 767px){
+    .flex-prev,.flex-next{opacity:0 !important;}
+    
+    .slider-arrow{
+         opacity: 0 !important;
+    }
+    .bx-has-pager{
+         margin-top: -100px !important;
+        
+    }
+    .flex-control-nav {
+    bottom: 90px !important;
+}
+}
+
+
+.main-block-link{
+     background-position: center center;
+     background-size: 360px 200px;
+     background-repeat: no-repeat;
+     background-position:top;
+     text-indent:-9999px;
+     display:inline-block;
+     height: 200px;
+     border: 1px solid #fff;
+}
+
+
+#goCollect-block{background-image: url(/wp-content/uploads/2016/11/Arabic-Desktop-gocollect.png);}
+#goSell-block{background-image: url(/wp-content/uploads/2016/11/desktop-blocks-gosell-arabic.png);}
+#goPay-block{background-image: url(/wp-content/uploads/2016/11/desktop-block-gopay-arabic.jpg)}
+#api-test{background-image: url(/wp-content/uploads/2017/02/desktop-arabic-testimonials-white.png);}
+#api-block{background-image: url(/wp-content/uploads/2016/11/Arabic-Desktop-api.png);}
+
+#goCollect-block:hover{background-image: url(/wp-content/uploads/2016/11/Arabic-Desktop-gocollect-c.png);}
+#goSell-block:hover{background-image: url(/wp-content/uploads/2016/11/desktop-blocks-gosell-colored-arabic.png);}
+#goPay-block:hover{background-image: url(/wp-content/uploads/2016/11/desktop-block-gopay-arabic-colored.jpg)}
+#test-block:hover{background-image: url(/wp-content/uploads/2017/02/desktop-arabic-testimonials-color.png);}
+#api-block:hover{background-image: url(/wp-content/uploads/2016/11/Arabic-Desktop-api-c.png);}
+
+
+#clients-carousel .item ul li {
+    width: 24%;
+}
+
+@media only screen and (min-width: 1442px){
+    .main-block-link{
+     background-size: 100%;
+}
+}
+
+.vc_tta-panel-body{border:none !important;}
+
+.vc_tta-tabs.vc_tta-has-pagination:not(.vc_tta-tabs-position-bottom) {
+    padding-bottom: 0px !important;
+}
+
+.vc_tta-tabs.vc_tta-has-pagination .vc_pagination {
+    z-index: 1;
+    margin-top: -60px;
+}
+
+.metaslider .caption-wrap {
+    position: absolute;
+    top: 289px;
+    color: white;
+    opacity: 1;
+    font-size: 30px;
+    width: 41%;
+    margin-left: 120px;
+    background: none !important;
+}
+
+.tparrows.tp-rightarrow:before {
+    content: url(/wp-content/uploads/sites/10/2016/10/arrow-right-stroke-03.svg)!important;
+}
+
+.tparrows.tp-leftarrow:before {
+    content: url(/wp-content/uploads/sites/10/2016/10/arrow-left-stroke-03.svg)!important;
+}
+
+.uranus{
+opacity: 0 !important;
+transition: 
+opacity 0.5s,
+transform 0.7s ease-out;
+}
+
+.uranus:hover{
+opacity: 1 !important;
+}
