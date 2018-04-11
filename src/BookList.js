@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {Switch, Route, Redirect, Link} from 'react-router-dom';
+
 import axios from 'axios';
 
 import Loading from './Loading';
@@ -24,14 +26,14 @@ class BookList extends Component {
   componentDidUpdate(prevProps) {
     if (prevProps.match.params.bookColor !== this.props.match.params.bookColor) {
       this.filterBooksClr();
-      console.log('gggggggggg');
+      //console.log('gggggggggg');
     }
     //this.setState({color: this.props.match.params.bookColor});
   }
 
   componentDidMount() {
     this.getBooks();
-    console.log("initial " + this.props.match.params.bookColor);
+    //console.log("initial " + this.props.match.params.bookColor);
     //this.filterBooksClr();
   }
 
@@ -46,16 +48,16 @@ class BookList extends Component {
 
   filterBooksClr() {
    //this.setState({searchActive:false}); 
-    console.log('this is the filterBooksClr fn');
+    //console.log('this is the filterBooksClr fn');
     if(this.props.match.params.bookColor){
     // //}
     //   color = color.toLowerCase();
-    console.log('hmmm' + this.state.color);
+    //console.log('hmmm' + this.state.color);
       let filteredBooksColor = this.state.books.filter(book => {
         return `${book.color}`.toLowerCase().includes(this.props.match.params.bookColor.toLowerCase());
       });
       this.setState({filteredBooksColor:filteredBooksColor,searchColorActive:true,});
-      console.log(filteredBooksColor);
+      //console.log(filteredBooksColor);
 }
   }
 
@@ -76,7 +78,7 @@ class BookList extends Component {
     }
 
     else if(this.state.searchActive){
-      console.log('here search');
+      //console.log('here search');
       bookRows = this.state.filteredBooks.map(book => <BookRow key={book.title} book={book} callfun={this.filterBooksClr}/>);
     }
 
@@ -93,6 +95,8 @@ class BookList extends Component {
           </thead>
           <tbody>
           {bookRows}
+          <br/>
+          <Link exact to="/books">ALL BOOKS</Link>
           </tbody>
         </table>
       </div>
