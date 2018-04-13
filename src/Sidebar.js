@@ -10,7 +10,7 @@ function Sidebar(props) {
           <NavLink exact to="/authors">AUTHORS</NavLink>
         </h4>
         <h4 className="menu-item">
-          <NavLink to="/books">BOOKS</NavLink>
+          <NavLink to="/books" onClick={() => props.bookStore.color = ''}>BOOKS</NavLink>
         </h4>
       </section>
     </sidebar>

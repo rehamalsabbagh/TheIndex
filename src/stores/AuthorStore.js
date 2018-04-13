@@ -44,5 +44,6 @@ decorate(AuthorStore, {
 
 const authorStore =  new AuthorStore()
 authorStore.fetchAuthors();
+console.log('from authorStore');
 
 export default authorStore;
