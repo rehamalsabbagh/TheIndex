@@ -14,8 +14,15 @@ import BookRow from './BookRow';
 function BookList(props) {
 
 console.log(props);
-const books = props.bookStore.filteredBooks;
-//const color = this.props.match.params.bookColor
+// if(this.props.match.params.bookColor){
+// 	props.bookStore.color = this.props.match.params.bookColor;
+// }
+let books = props.bookStore.filteredBooks(this.props.match.params.bookColor);
+console.log(books);
+if(props.bookStore.query){
+	books = props.bookStore.searchBooks(this.props.match.params.bookColor);
+}
+
 
   return (
     <div className="books">

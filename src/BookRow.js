@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {observer} from 'mobx-react';
+
 
 function BookRow(props) {
   const book = props.book;
@@ -12,7 +14,7 @@ function BookRow(props) {
     <tr>
       <td>
         <button className={`btn btn-${book.available ? 'success' : 'danger'}`}
-                onClick={() => alert("You need to make me work work work work work")}>
+                onClick={() => props.store.changeBookState(book.id)}>
           {book.available ? 'borrow' : 'return'}
         </button>
       </td>
@@ -20,11 +22,11 @@ function BookRow(props) {
       <td>{authorComponants}</td>
       <td>
         <Link to={`/books/${book.color}`}>
-          <button className="btn" style={{backgroundColor: book.color}} onClick={() => props.store.color = book.color}/>
+          <button className="btn" style={{backgroundColor: book.color}} />
         </Link>
       </td>
     </tr>
   );
 }
 
-export default BookRow;
+export default observer(BookRow);

@@ -1,11 +1,13 @@
 import {decorate, observable, computed} from 'mobx';
 import axios from 'axios';
+    //onClick={() => props.store.color = book.color}
 
 class BookStore {
   constructor() {
     this.books = [];
     this.color = "";
     this.loading = true;
+    this.query = '';
   }
 
   fetchBooks() {
@@ -27,23 +29,57 @@ class BookStore {
     return this.color = color;
   }
 
-  get filteredBooks() {
-    if (this.books) {
-      return this.books.filter(book => {
+  filteredBooks(color) {
+    let arr = [];
+    if (this.books && color) {
+      arr = this.books.filter(book => {
         return `${book.color}`
         .toLowerCase()
-        .includes(this.color);
+        .includes(color);
+      });
+    }
+    else{
+      arr = this.books;
+    }
+    return arr;
+  }
+
+  searchBooks(color) {
+    if (this.books) {
+      return this.filteredBooks(color).filter(book => {
+        return `${book.title}`
+        .toLowerCase()
+        .includes(this.query);
       });
     }
     return [];
   }
+
+changeBookState(bookid){
+  for (var i = 0; i < this.books.length; i++) {
+    if( this.books[i].id==bookid ){
+      if(this.books[i].available){
+        this.books[i].available = false;
+      }
+      else{
+        this.books[i].available = true;
+      }
+    }
+  }
+  console.log('----');
+  console.log(this.books);
 }
+
+}
+
 
 decorate(BookStore, {
   books: observable,
   color: observable,
   loading: observable,
-  filteredBooks: computed,
+  query: observable,
+  filteredBooks: observable,
+  searchBooks: observable,
 })
 
 const bookStore =  new BookStore();

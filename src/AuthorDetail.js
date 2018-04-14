@@ -54,7 +54,7 @@ class AuthorDetail extends Component {
           <h3>{author.first_name} {author.last_name}</h3>
           <img src={author.imageUrl} className="img-thumbnail"/>
         </div>
-        <BookTable books={books} />
+        <BookTable books={books} store={this.props.bookStore}/>
       </div>;
   }
 }
